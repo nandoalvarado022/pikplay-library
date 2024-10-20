@@ -13,9 +13,9 @@ module.exports = {
         }
         config.plugins.push(
             new NextFederationPlugin({
-                name: 'pikplay_library',
+                name: 'pikplay-library',
                 remotes: {
-                    next1: `pikplay_frontend@http://localhost:3001/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
+                    'pikplay-library': `pikplay-frontend@http://localhost:3001/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
                 },
                 filename: 'static/chunks/remoteEntry.js',
                 exposes: {
