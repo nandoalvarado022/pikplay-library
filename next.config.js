@@ -14,12 +14,10 @@ module.exports = {
         config.plugins.push(
             new NextFederationPlugin({
                 name: 'pikplay-library',
-                remotes: {
-                    'pikplay-library': `pikplay-frontend@http://localhost:3001/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
-                },
                 filename: 'static/chunks/remoteEntry.js',
                 exposes: {
-                    './Header': './src/components/Header.jsx',
+                    // './Header': './src/components/Header.jsx',
+                    './Login': './src/modules/Login/Login.jsx',
                 },
                 shared: {
                     // whatever else

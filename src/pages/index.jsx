@@ -1,10 +1,14 @@
 import Header from "@/components/Header";
+import Login from "@/modules/login/Login";
 
-const Index = () => {
+const Index = (props) => {
     return (
         <div>
-        <h1>Home</h1>
-        <Header />
+            <h1>Pikplay Laboratory</h1>
+            {/* <Header /> */}
+            <Login
+                env="dev"
+            />
         </div>
     );
 }

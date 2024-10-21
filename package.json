@@ -1,7 +1,7 @@
 {
   "name": "pikplay-library",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "rimraf .next && NEXT_PRIVATE_LOCAL_WEBPACK=true PORT=3001 next dev",
     "build": "NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
@@ -9,10 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@boiseitguru/cookie-cutter": "^0.2.3",
     "@module-federation/nextjs-mf": "8.6.1",
+    "@mui/icons-material": "^5.15.4",
+    "@mui/material": "^5.15.4",
     "next": "14.2.15",
     "react": "18",
-    "react-dom": "18"
+    "react-dom": "18",
+    "react-google-recaptcha": "^3.1.0",
+    "react-toastify": "^10.0.6",
+    "sass": "^1.80.3"
   },
   "devDependencies": {
     "babel-loader": "9.2.1",
