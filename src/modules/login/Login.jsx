@@ -4,7 +4,6 @@ import React, { useState } from 'react'
 import cookieCutter from '@boiseitguru/cookie-cutter'
 import { useRouter } from 'next/router'
 import { loginSrv } from './services/login.service.ts'
-import { toast } from 'react-toastify'
 import LoginInterfaceExample from './LoginInterfaceExample.jsx'
 
 function Login(props) {
@@ -52,7 +51,7 @@ function Login(props) {
         router.push('?login=true')
       } else {
         document.getElementById('verificationCode').value = ''
-        toast('Código no valido')
+        alert('Código no valido')
         setButtonText('Validar')
       }
     } catch (error) {
@@ -63,7 +62,7 @@ function Login(props) {
   const handleEnviarCodigo = async () => {
     setButtonText('Enviando...')
     if (!phone || !numberValidated(phone)) {
-      toast('Debes escribir un número de celular válido, recuerda que a este número llegará el código de acceso')
+      alert('Debes escribir un número de celular válido, recuerda que a este número llegará el código de acceso')
       setButtonText('Enviar código')
       return false
     }
