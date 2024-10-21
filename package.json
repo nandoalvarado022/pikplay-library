@@ -9,16 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@boiseitguru/cookie-cutter": "^0.2.3",
+    "@boiseitguru/cookie-cutter": "0.2.3",
     "@module-federation/nextjs-mf": "8.6.1",
-    "@mui/icons-material": "^5.15.4",
-    "@mui/material": "^5.15.4",
+    "@mui/icons-material": "5.15.4",
+    "@mui/material": "5.15.4",
     "next": "14.2.15",
     "react": "18",
     "react-dom": "18",
-    "react-google-recaptcha": "^3.1.0",
-    "react-toastify": "^10.0.6",
-    "sass": "^1.80.3"
+    "react-google-recaptcha": "3.1.0",
+    "sass": "1.80.3"
   },
   "devDependencies": {
     "babel-loader": "9.2.1",
